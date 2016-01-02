@@ -1,0 +1,63 @@
+<!doctype html>
+<html class="no-js">
+	<head>
+		<meta charset="utf-8">
+		<title>gamui</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+		
+
+		<link rel="stylesheet" href="styles/gamui.css">
+
+		<script src="scripts/vendor/modernizr.js"></script>
+	</head>
+	<body>
+		<!--[if lt IE 10]>
+			<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+		fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+
+		<script>
+			window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}(document,"script","twitter-wjs"));
+		</script>
+
+		<script src="https://apis.google.com/js/platform.js" async defer>
+		  {parsetags: 'explicit'}
+		</script>
+
+		<div id="title-box" class="info-box">
+			this is a test info box.
+		</div>
+
+		<div id="main-loader" class="loading-screen">
+			<div class="loader">loading</div>
+		</div>
+
+		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+		<script>
+			(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+			function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+			e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+			e.src='//www.google-analytics.com/analytics.js';
+			r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+			ga('create','UA-XXXXX-X');ga('send','pageview');
+		</script>
+
+		<script src="scripts/vendor.js"></script>
+
+		<script src="scripts/gamui.js"></script>
+
+		<script src="scripts/testapp.js"></script>
+
+</body>
+</html>

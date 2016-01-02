@@ -1,0 +1,14 @@
+.energy-bar-cont {
+	height: 20px;
+	width: 20%;
+	min-width: 100px;
+	border: 1px solid rgba(0,0,0,0);
+	position: absolute;
+	display: none;
+}
+
+.energy-bar {
+	width: 100%;
+	height: 100%;
+	@include build-prefix-values(transition, .3s);
+}

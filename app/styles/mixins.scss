@@ -1,0 +1,26 @@
+$default-prefixes: webkit moz ms o;
+
+@mixin build-prefix-values($property, $value, $prefixes: $default-prefixes) {
+    @each $prefix in $prefixes {
+        -#{$prefix}-#{$property}: #{$value};
+    }
+    #{$property}: #{$value};
+} 
+
+// Transition Mixin
+@mixin transition($property: all, $duration: 1s, $easing: linear) {
+	$value: $property $duration $easing;
+	@include build-prefix-values(transition, $value);
+}
+
+// Rounded Corners Mixin
+@mixin rounded($radius:5) {
+	@include build-prefix-values(border-radius, $radius);
+}
+
+// Linear Gradient Mixin
+@mixin linear-gradient($start: #FFFFFF, $stop: #000000) {
+	background-color: $start;
+	background-image: -webkit-linear-gradient(top, $start, $stop);
+	background-image: linear-gradient(to bottom, $start, $stop);
+}

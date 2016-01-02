@@ -1,0 +1,17 @@
+#social-bar {
+	
+	height: 40px;
+	width: 100%;
+	background: grey;
+	position: absolute;
+	box-sizing: border-box;
+	padding-left: 1%;
+	padding-top: 9px;
+	display: none;
+
+	div, iframe {
+		margin-right: 1%;
+		width: 109px;
+	}
+
+}
