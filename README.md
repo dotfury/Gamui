@@ -13,8 +13,9 @@ Minified gamui.css and gamui.js in dist folder
 
 
 <!-- Start app/scripts/energy-bar.js -->
+##energy-bar.js
 
-## init({xPos:{string} 'left' or 'right' , yPos:{string} 'top' or 'bottom' , color:{string} , count:{number} , border: {boolean}, class: [Array of classes to add to element]})
+### init({xPos:{string} 'left' or 'right' , yPos:{string} 'top' or 'bottom' , color:{string} , count:{number} , border: {boolean}, class: [Array of classes to add to element]})
 
 Initialize an energy bar
 EX: Life bar, Energy bar, etc.
@@ -27,7 +28,7 @@ eBar.init({xPos: 'right', yPos: 'top', color: 'blue', count: 1, border: true});
 
 * **object** *{xPos:{string} 'left' or 'right' , yPos:{string} 'top' or 'bottom' , color:{string} , count:{number} , border: {boolean}, class: [Array of classes to add to element]}* 
 
-## update(percentage)
+### update(percentage)
 
 Update the energy bar %
 
@@ -39,7 +40,7 @@ eBar.update(90);
 
 * **number** *percentage* to update the energy bar with
 
-## hide()
+### hide()
 
 Hide energy bar
 
@@ -47,7 +48,7 @@ Hide energy bar
 
 eBar.hide();
 
-## show()
+### show()
 
 Show energy bar
 
@@ -62,7 +63,9 @@ eBar.show();
 
 <!-- Start app/scripts/fullscreen.js -->
 
-## init()
+## fullscreen.js
+
+### init()
 
 Initialize a FullScreen object
 
@@ -71,7 +74,7 @@ Initialize a FullScreen object
 var fSreen = new FullScreen();
 fScreen.init();
 
-## setFull()
+### setFull()
 
 Set browser window to full screen
 
@@ -79,7 +82,7 @@ Set browser window to full screen
 
 fScreen.setFull();
 
-## endFull()
+### endFull()
 
 Exit full screen
 
@@ -90,29 +93,11 @@ fScreen.endFull();
 <!-- End app/scripts/fullscreen.js -->
 
 
-
-
-<!-- Start app/scripts/interface.js -->
-
-## INTERFACE
-
-<!-- End app/scripts/interface.js -->
-
-
-
-
-<!-- Start app/scripts/main.js -->
-
-## onload()
-
-<!-- End app/scripts/main.js -->
-
-
-
-
 <!-- Start app/scripts/menu.js -->
 
-## init({menuArray: , class: , parent: })
+## menu.js
+
+### init({menuArray: , class: , parent: })
 
 Initialize a menu
 Useful for in game menus
@@ -126,14 +111,14 @@ menu.init({menuArray: [{title: 'play', type: 'action', action: startGame}], clas
 
 * **Object** *{menuArray: , class: , parent: }* 
 
-## hide()
+### hide()
 
 Hide menu
 ### Examples:
 
 menu.hide();
 
-## show()
+### show()
 
 Show menu
 ### Examples:
@@ -147,7 +132,9 @@ menu.show();
 
 <!-- Start app/scripts/score-box.js -->
 
-## init({xPos:{string} 'left' or 'right' , yPos:{string} 'top' or 'bottom', count:{number} , score: {number}(optional), class: [Array of classes to add to element](optional)})
+## score-box.js
+
+### init({xPos:{string} 'left' or 'right' , yPos:{string} 'top' or 'bottom', count:{number} , score: {number}(optional), class: [Array of classes to add to element](optional)})
 
 Initialize a score box
 Useful for in game popups, loading screen
@@ -161,7 +148,7 @@ sBox.init({xPos: 'left', yPos: 'top', count: 1});
 
 * **object** *{xPos:{string} 'left' or 'right' , yPos:{string} 'top' or 'bottom', count:{number} , score: {number}(optional), class: [Array of classes to add to element](optional)}* 
 
-## update(Amount)
+### update(Amount)
 
 Update the score
 
@@ -173,7 +160,7 @@ sBox.update(90);
 
 * **number** *Amount* to increment score
 
-## reset()
+### reset()
 
 Reset the score
 
@@ -181,7 +168,7 @@ Reset the score
 
 sBox.reset();
 
-## hide()
+### hide()
 
 Hide the score
 
@@ -189,7 +176,7 @@ Hide the score
 
 sBox.hide();
 
-## show()
+### show()
 
 Show the score
 
@@ -203,8 +190,9 @@ sBox.show();
 
 
 <!-- Start app/scripts/screen.js -->
+## screen.js
 
-## init({ element: HTML element in DOM to use, class: [Array of class names to add for styling, etc.]})
+### init({ element: HTML element in DOM to use, class: [Array of class names to add for styling, etc.]})
 
 Initialize a screen
 Useful for in game popups, loading screen
@@ -218,21 +206,21 @@ iBox.init({element: 'instructions', class: ['cheese', 'main-instructions']});
 
 * **object** *{ element: HTML element in DOM to use, class: [Array of class names to add for styling, etc.]}* 
 
-## show()
+### show()
 
 Display info box
 ### Examples:
 
 iBox.show();
 
-## hide()
+### hide()
 
 Hide info box
 ### Examples:
 
 iBox.hide();
 
-## getElement()
+### getElement()
 
 Return the HTML element
 ### Examples:
@@ -250,7 +238,9 @@ iBox.getElement();
 
 <!-- Start app/scripts/social-bar.js -->
 
-## init({ yPos:{string} 'top' or 'bottom' , facebook:{boolean} , twitter:{boolean} , google:{boolean} , url:{string} URL to share , class: [Array of class to add to element]})
+## social-bar.js
+
+### init({ yPos:{string} 'top' or 'bottom' , facebook:{boolean} , twitter:{boolean} , google:{boolean} , url:{string} URL to share , class: [Array of class to add to element]})
 
 Initialize a social bar
 Useful for FB share, tweet, etc.
@@ -264,23 +254,25 @@ socBar.init({yPos: 'bottom', url: 'http://google.com', facebook: true, twitter: 
 
 * **object** *{ yPos:{string} 'top' or 'bottom' , facebook:{boolean} , twitter:{boolean} , google:{boolean} , url:{string} URL to share , class: [Array of class to add to element]}* 
 
-## show()
+### show()
 
 Show social bar
 ### Examples:
 
 socBar.show();
 
-## hide()
+### hide()
 
 Hide social bar
 ### Examples:
 
 socBar.hide();
 
-## parseButtons()
+### parseButtons()
 
 Initialize social buttons manually due to post loading
 
 <!-- End app/scripts/social-bar.js -->
+
+
 
