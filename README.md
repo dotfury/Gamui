@@ -22,6 +22,7 @@ EX: Life bar, Energy bar, etc.
 ### Examples:
 
 var eBar = new EnergyBar();
+
 eBar.init({xPos: 'right', yPos: 'top', color: 'blue', count: 1, border: true});
 
 ### Params:
@@ -57,8 +58,6 @@ Show energy bar
 eBar.show();
 
 <!-- End app/scripts/energy-bar.js -->
-
-
 
 
 <!-- Start app/scripts/fullscreen.js -->
