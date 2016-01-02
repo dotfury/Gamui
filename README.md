@@ -12,10 +12,10 @@ gulp - to build
 Minified gamui.css and gamui.js in dist folder
 
 
+
+
 <!-- Start app/scripts/energy-bar.js -->
 ##energy-bar.js
-
-### init({xPos:{string} 'left' or 'right' , yPos:{string} 'top' or 'bottom' , color:{string} , count:{number} , border: {boolean}, class: [Array of classes to add to element]})
 
 Initialize an energy bar
 EX: Life bar, Energy bar, etc.
@@ -65,8 +65,6 @@ eBar.show();
 
 ## fullscreen.js
 
-### init()
-
 Initialize a FullScreen object
 
 ### Examples:
@@ -97,8 +95,6 @@ fScreen.endFull();
 
 ## menu.js
 
-### init({menuArray: , class: , parent: })
-
 Initialize a menu
 Useful for in game menus
 Styled with css
@@ -128,13 +124,9 @@ menu.show();
 <!-- End app/scripts/menu.js -->
 
 
-
-
 <!-- Start app/scripts/score-box.js -->
 
 ## score-box.js
-
-### init({xPos:{string} 'left' or 'right' , yPos:{string} 'top' or 'bottom', count:{number} , score: {number}(optional), class: [Array of classes to add to element](optional)})
 
 Initialize a score box
 Useful for in game popups, loading screen
@@ -192,11 +184,10 @@ sBox.show();
 <!-- Start app/scripts/screen.js -->
 ## screen.js
 
-### init({ element: HTML element in DOM to use, class: [Array of class names to add for styling, etc.]})
-
 Initialize a screen
 Useful for in game popups, loading screen
 Styled with css
+
 ### Examples:
 
 var iBox = new GameScreen();
@@ -240,8 +231,6 @@ iBox.getElement();
 
 ## social-bar.js
 
-### init({ yPos:{string} 'top' or 'bottom' , facebook:{boolean} , twitter:{boolean} , google:{boolean} , url:{string} URL to share , class: [Array of class to add to element]})
-
 Initialize a social bar
 Useful for FB share, tweet, etc.
 Styled with css
@@ -273,6 +262,4 @@ socBar.hide();
 Initialize social buttons manually due to post loading
 
 <!-- End app/scripts/social-bar.js -->
-
-
 
