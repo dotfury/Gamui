@@ -1,6 +1,14 @@
 # Gamui
 Library to create UI elements for Browser based games
 
+Game menus
+Life / Energy bars
+Score boxes
+Social integration
+Fullscreen
+
+Separated into modules, so you can take out what you don't need.
+
 Uses Yeoman Gulp webapp generator for builds: https://github.com/yeoman/generator-gulp-webapp#readme
 
 ## Using with gulp
