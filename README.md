@@ -6,6 +6,7 @@ Uses Yeoman Gulp webapp generator for builds: https://github.com/yeoman/generato
 ## Using with gulp
 
 gulp watch  -to run locally
+
 gulp - to build
 
 
@@ -69,6 +70,7 @@ Initialize a FullScreen object
 ### Examples:
 
 var fSreen = new FullScreen();
+
 fScreen.init();
 
 ### setFull()
@@ -100,6 +102,7 @@ Styled with css
 ### Examples:
 
 var menu = new Menu();
+
 menu.init({menuArray: [{title: 'play', type: 'action', action: startGame}], class: [Array of classes to add to element](optional), parent:{HTML} element to place menu(optional)});
 
 ### Params:
@@ -133,6 +136,7 @@ Styled with css
 ### Examples:
 
 var sBox = new ScoreBox();
+
 sBox.init({xPos: 'left', yPos: 'top', count: 1});
 
 ### Params:
@@ -190,6 +194,7 @@ Styled with css
 ### Examples:
 
 var iBox = new GameScreen();
+
 iBox.init({element: 'instructions', class: ['cheese', 'main-instructions']});
 
 ### Params:
@@ -236,6 +241,7 @@ Styled with css
 ### Examples:
 
 var socBar = new SocialBar();
+
 socBar.init({yPos: 'bottom', url: 'http://google.com', facebook: true, twitter: true, google: true});
 
 ### Params:
