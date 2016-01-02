@@ -1,15 +1,15 @@
 # Gamui
 Library to create UI elements for Browser based games
 
-Game menus
+-Game menus
 
-Life / Energy bars
+-Life / Energy bars
 
-Score boxes
+-Score boxes
 
-Social integration
+-Social integration
 
-Fullscreen
+-Fullscreen
 
 Separated into modules, so you can take out what you don't need.
 
@@ -24,7 +24,7 @@ gulp - to build
 
 Minified gamui.css and gamui.js in dist folder
 
-CSS currently has minimal styles, meant to be overridden to fit you game.
+CSS currently has minimal styles, meant to be overridden to fit your game.
 
 Example use can be found in app/scripts/main.js and app/scripts/interface.js
 
