@@ -12,14 +12,17 @@ gulp - to build
 
 Minified gamui.css and gamui.js in dist folder
 
+CSS currently has minimal styles, meant to be overridden to fit you game.
 
+Example use can be found in app/scripts/main.js and app/scripts/interface.js
 
 
 <!-- Start app/scripts/energy-bar.js -->
 ##energy-bar.js
 
 Initialize an energy bar
-EX: Life bar, Energy bar, etc.
+
+###EX: Life bar, Energy bar, etc.
 ### Examples:
 
 var eBar = new EnergyBar();
@@ -97,8 +100,9 @@ fScreen.endFull();
 ## menu.js
 
 Initialize a menu
-Useful for in game menus
-Styled with css
+
+###EX: in game menus
+
 ### Examples:
 
 var menu = new Menu();
@@ -131,8 +135,9 @@ menu.show();
 ## score-box.js
 
 Initialize a score box
-Useful for in game popups, loading screen
-Styled with css
+
+### Useful for in game popups, loading screen
+
 ### Examples:
 
 var sBox = new ScoreBox();
@@ -188,8 +193,8 @@ sBox.show();
 ## screen.js
 
 Initialize a screen
-Useful for in game popups, loading screen
-Styled with css
+
+### Useful for in game popups, loading screen
 
 ### Examples:
 
@@ -236,8 +241,9 @@ iBox.getElement();
 ## social-bar.js
 
 Initialize a social bar
-Useful for FB share, tweet, etc.
-Styled with css
+
+### Useful for FB share, tweet, etc.
+
 ### Examples:
 
 var socBar = new SocialBar();
