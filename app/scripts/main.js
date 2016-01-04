@@ -1,8 +1,5 @@
 window.onload = function() {
 
-	INTERFACE.sequence.init({images:['../images/kitten1.jpg', '../images/kitten2.jpg', '../images/kitten3.jpg'],
-	wait: 2000, offset: 1000});
-
 	INTERFACE.loadingScreen.init({element: 'main-loader'});
 	INTERFACE.loadingScreen.show();
 
@@ -13,18 +10,16 @@ window.onload = function() {
 
 	INTERFACE.socialBar.init({yPos: 'bottom', url: 'http://google.com', facebook: true, twitter: true, google: true});
 
+	INTERFACE.titleBox.init({element: 'title-box', class: ['cheese', 'main-instructions']});
+
 	INTERFACE.mainMenu.init({menuArray: [{title: 'play', type: 'action', action: startGame}]});
-
-	INTERFACE.sequence.insert(hideLoadScreen);
-
-};
-
-var hideLoadScreen = function() {
 	INTERFACE.mainMenu.show();
 	INTERFACE.loadingScreen.hide();
+
 };
 
 var startGame = function() {
+	INTERFACE.titleBox.hide();
 	INTERFACE.mainMenu.hide();
 	INTERFACE.lifeBar.show();
 	INTERFACE.powerBar.show();

@@ -236,58 +236,6 @@ iBox.getElement();
 
 
 
-<!-- Start app/scripts/sequence.js -->
-
-## init({images: [Array of images in sequence], wait: {number} how long to display each image, offset:{number} time for image fade(css transition time), class: [Array of classes to add to element]})
-
-Initialize a Sequence
-EX: Intro logos
-### Examples:
-
-var seq = new Sequence();
-eBar.init({images: ['../images/kitten1.jpg', '../images/kitten2.jpg'], wait: 1000, offset: 2000, class: ['open-sequence']);
-
-### Params:
-
-* **object** *{images: [Array of images in sequence], wait: {number} how long to display each image, offset:{number} time for image fade(css transition time), class: [Array of classes to add to element]}* 
-
-## cycle()
-
-Progress the Sequence
-
-### Examples:
-
-seq.cycle();
-
-## checkLoad()
-
-Make sure all images are loaded before display
-
-### Examples:
-
-seq.checkLoad();
-
-## remove()
-
-Remove Sequence from DOM
-
-### Examples:
-
-seq.remove();
-
-## insert()
-
-Insert Sequence to DOM
-
-### Examples:
-
-seq.insert();
-
-<!-- End app/scripts/sequence.js -->
-
-
-
-
 <!-- Start app/scripts/social-bar.js -->
 
 ## init({ yPos:{string} 'top' or 'bottom' , facebook:{boolean} , twitter:{boolean} , google:{boolean} , url:{string} URL to share , class: [Array of class to add to element]})
