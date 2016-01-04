@@ -1,11 +1,11 @@
 @import 'mixins';
-@import 'damage';
 @import 'energy-bar';
 @import 'menu';
 @import 'score-box';
 @import 'social-bar';
-@import 'loading';
 @import 'screen';
+@import 'sequence';
+@import 'loading';
 
 * { margin: 0; padding: 0; }
 body, html { width: 100%; height: 100%; }
