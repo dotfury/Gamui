@@ -148,7 +148,7 @@ menu.show();
 
 Initialize a score box
 
-### Keep score and display to user
+### Useful for in game popups, loading screen
 
 ### Examples:
 
