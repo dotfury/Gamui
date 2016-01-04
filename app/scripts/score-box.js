@@ -21,13 +21,13 @@ var ScoreBox = function() {
 
 		args.count = args.count || 1;
 
-		score = args.score || 000000;
+		score = args.score || 0;
 
 		box = document.createElement('div');
 		box.style.display = 'none';
 		box.className = 'score-box';
 
-		if (args.class != undefined && args.class.length > 0) {
+		if (args.class !== undefined && args.class.length > 0) {
 			if (!Array.isArray(args.class)) return console.error('Class property needs to be an array.');
 			args.class.forEach(function(className) {
 				box.classList.add(className);

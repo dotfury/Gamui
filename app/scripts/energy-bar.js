@@ -42,7 +42,7 @@ var EnergyBar = function() {
 
 		bar.style.backgroundColor = args.color;
 
-		if (args.class != undefined && args.class.length > 0) {
+		if (args.class !== undefined && args.class.length > 0) {
 			if (!Array.isArray(args.class)) return console.error('Class property needs to be an array.');
 			args.class.forEach(function(className) {
 				container.classList.add(className);

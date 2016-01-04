@@ -6,6 +6,10 @@ var gulp = require('gulp');
 // load plugins
 var $ = require('gulp-load-plugins')();
 
+gulp.task('clear', function (done) {
+    return $.cache.clearAll(done);
+});
+
 gulp.task('styles', function () {
     return gulp.src('app/styles/main.scss')
         .pipe($.rubySass({
@@ -49,7 +53,7 @@ gulp.task('html', ['styles', 'doc', 'scripts'], function () {
         .pipe($.size());
 });
 
-gulp.task('images', function () {
+gulp.task('images', ['clear'], function () {
     return gulp.src('app/images/**/*')
         .pipe($.cache($.imagemin({
             optimizationLevel: 3,
@@ -77,7 +81,7 @@ gulp.task('clean', function () {
     return gulp.src(['.tmp', 'dist'], { read: false }).pipe($.clean());
 });
 
-gulp.task('build', ['html', 'images', 'fonts', 'extras']);
+gulp.task('build', ['html', 'images']);
 
 gulp.task('default', ['clean'], function () {
     gulp.start('build');

@@ -1,7 +1,0 @@
-body {
-	@include build-prefix-values(transition, 1s);
-}
-body.damage {
-	@include build-prefix-values(transition, .1s);
-	filter: blur(3px);
-}

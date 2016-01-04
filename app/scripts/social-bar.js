@@ -19,7 +19,7 @@ var SocialBar = function() {
  * @api public
  */
 	var init = function(args) {
-		if (typeof args.url == 'undefined' || args.url == '') {
+		if (typeof args.url == 'undefined' || args.url === '') {
 			console.error('The social bar must be initialized with a url.');
 			return;
 		}
@@ -47,7 +47,7 @@ var SocialBar = function() {
 			hasGP = true;
 		}
 
-		if (args.class != undefined && args.class.length > 0) {
+		if (args.class !== undefined && args.class.length > 0) {
 			if (!Array.isArray(args.class)) return console.error('Class property needs to be an array.');
 			args.class.forEach(function(className) {
 				bar.classList.add(className);

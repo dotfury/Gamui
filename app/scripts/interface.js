@@ -10,10 +10,10 @@ var INTERFACE = {
 
 	score: new ScoreBox(),
 
-	titleBox: new GameScreen(),
-
 	socialBar: new SocialBar(),
 
-	loadingScreen: new GameScreen()
+	loadingScreen: new GameScreen(),
+
+	sequence: new Sequence()
 
 };
