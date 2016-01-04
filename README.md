@@ -286,6 +286,8 @@ Initialize social buttons manually due to post loading
 
 <!-- End app/scripts/social-bar.js -->
 
+##sequence.js
+
 Initialize a Sequence
 
 ###EX: Intro logos
@@ -293,6 +295,7 @@ Initialize a Sequence
 ### Examples:
 
 var seq = new Sequence();
+
 eBar.init({images: ['../images/kitten1.jpg', '../images/kitten2.jpg'], wait: 1000, offset: 2000, class: ['open-sequence']);
 
 ### Params:
